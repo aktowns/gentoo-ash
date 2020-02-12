@@ -7,6 +7,6 @@
 		<owner>
 			<email>mail@ashleytowns.id.au</email>
 		</owner>
-		<source type="git">https://github.com/aktowns/gentoo-ash.git</source>
+		<source type="git">git@github.com:aktowns/gentoo-ash.git</source>
 	</repo>
 </repositories>
