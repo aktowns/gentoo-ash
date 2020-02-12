@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>gentoo-ash</name>
+		<description>Some random ebuilds i use</description>
+		<homepage>https://github.com/aktowns/gentoo-ash</homepage>
+		<owner>
+			<email>mail@ashleytowns.id.au</email>
+		</owner>
+		<source type="git">https://github.com/aktowns/gentoo-ash.git</source>
+	</repo>
+</repositories>
