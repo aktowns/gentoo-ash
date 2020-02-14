@@ -7,7 +7,7 @@ DESCRIPTION="Neovim client library and GUI, in Qt5."
 HOMEPAGE="https://github.com/equalsraf/neovim-qt"
 EGIT_REPO_URI="https://github.com/equalsraf/neovim-qt.git"
 
-inherit cmake git-r3
+inherit cmake git-r3 xdg-utils
 
 LICENSE="ISC"
 SLOT="0"
@@ -31,4 +31,10 @@ src_configure() {
 
 src_install() {
 	cmake_src_install
+
+	dolib.so "${BUILD_DIR}/lib/libneovim-qt-gui.so"
+}
+
+pkg_postinst() {
+	xdg_desktop_database_update
 }
